@@ -42,5 +42,6 @@ From *Lorem ipsum* text
             "count": 4
         },
         ...
+    ]
 }
 ```

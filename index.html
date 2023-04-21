@@ -1,33 +1,12 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
     <title>Word File Counter</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        div {
-            background-color: #D7D9B1;
-            padding: 8vmin;
+    <link rel="stylesheet" href="styles.css" type="text/css">
 
-            margin: 4vh 5vw;
-            border-radius: 50px;
-        }
-
-        body {
-            background-color: #84ACCE;
-            text-align: center;
-        }
-
-        header {
-            padding: 3vh;
-        }
-
-        header hr {
-            margin: 0 35vw;
-        }
-    </style>
 </head>
 
 <body>
@@ -36,13 +15,13 @@
         <hr />
     </header>
     <main>
-        <form action="/" method="post">
+        <form id="file-form">
 
+            <!-- Gets the path to the file for counting words -->
             <label for="file">
                 <div>Choose a plain text <strong>(.txt)</strong> file to count all word in a JSON
                     <br>
                     <br>
-
                     <input id="file" type="file" accept="text/plain" name="file" multiple />
                 </div>
             </label>
@@ -50,6 +29,9 @@
             <button type="submit">Count Words!</button>
         </form>
     </main>
+
+    <!-- Script that generates and shoes the JSON -->
+    <script src="main.js"></script>
 </body>
 
 </html>

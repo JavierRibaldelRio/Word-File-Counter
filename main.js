@@ -58,7 +58,7 @@ function countWords(text) {
     // Traetment of the text
     text = text.toLowerCase()
         .trim().
-        replace(/[.,\/#!1234567890?¿¡—%\^&\*\]\[\{\};$:…{}«»,=\-_`~()]/g, " ").
+        replace(/[.,\/#!123<456789>0?¿¡—%\^&\*\]\[\{\};$:…{}«»,=\-_`~()]/g, " ").
         replace(/\n/g, " ").
         replace(/\s+/g, " ");
 
